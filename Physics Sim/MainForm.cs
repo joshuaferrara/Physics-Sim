@@ -12,13 +12,13 @@ using System.Runtime.InteropServices;
 
 namespace Physics_Sim
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         [DllImport("kernel32.dll", SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
         static extern bool AllocConsole();
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
             AllocConsole();
